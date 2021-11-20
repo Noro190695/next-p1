@@ -1,0 +1,19 @@
+.header{
+    padding-bottom: 20px;
+    .top__content{
+        display: flex;
+        align-items: center;
+
+        p{
+            margin-left: 10px;
+            font-size: 20px;
+            line-height: 26px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            span{
+                font-weight: normal;
+            }
+        }
+    }
+}
