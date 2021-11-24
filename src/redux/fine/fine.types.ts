@@ -1,4 +1,8 @@
 
-export const types  = {
-    GET_DATA: 'GET_DATA'
+export enum types {
+    GET_DATA = 'GET_DATA',
+    NOTE_FINE = 'NOTE_FINE',
+    LOADING_ENABLE = 'LOADING_ENABLE',
+    LOADING_DISABLE = 'LOADING_DISABLE',
+    FIRST_DATA = 'FIRST_DATA'
 }

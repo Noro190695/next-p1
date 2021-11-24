@@ -5,7 +5,9 @@ import Layout from '../src/components/layout/Layout';
 import Result from '../src/components/search/Result';
 import Loading from '../src/components/loading/Loading';
 import NoResult from '../src/components/search/NoResult';
+
 const Home: NextPage = () => {
+  
   return (
     <>
       <Head>
@@ -13,15 +15,11 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Form />
-        {/* <Result/> */}
       </Layout>
     </>
   )
 }
 
-Home.getInitialProps = {
-  
-}
 
 export default Home;
 

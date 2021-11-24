@@ -3,7 +3,11 @@ import { IData } from "../../interfaces/search";
 
 
 export const fetchData = async (n: string) => {
-    const res = await axios.get(`https://test-task.shtrafovnet.com/fines/${n}`);
+    try{
+        const res = await axios.get<IData>(`https://test-task.shtrafovnet.com/fines/${n}`);
+        return res.data;
+    }catch(e) {
+        return {};
+    }
     
-    return res;
 }
